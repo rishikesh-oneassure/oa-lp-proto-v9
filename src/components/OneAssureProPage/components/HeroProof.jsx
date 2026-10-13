@@ -66,9 +66,20 @@ export default function HeroProof({ className }) {
       role="region"
       aria-roledescription="carousel"
       aria-label="What OneAssure offers"
-      onMouseEnter={() => setHeld(true)}
-      onMouseLeave={() => setHeld(false)}
-      onFocus={() => setHeld(true)}
+      onPointerEnter={(event) => {
+        if (event.pointerType === "mouse") setHeld(true);
+      }}
+      onPointerLeave={(event) => {
+        if (event.pointerType === "mouse") setHeld(false);
+      }}
+      onFocus={(event) => {
+        const target = event.target;
+        window.requestAnimationFrame(() => {
+          if (target instanceof Element && target.matches(":focus-visible")) {
+            setHeld(true);
+          }
+        });
+      }}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) setHeld(false);
       }}

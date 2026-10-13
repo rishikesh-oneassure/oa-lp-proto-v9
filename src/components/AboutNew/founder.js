@@ -9,7 +9,7 @@ const founderSection = {
   name: "Ruchir Kanakia",
   designation: "Founder",
   company: "OneAssure",
-  image: "/about-founder.png",
+  image: "/founder.png",
 };
 
 export default founderSection;
