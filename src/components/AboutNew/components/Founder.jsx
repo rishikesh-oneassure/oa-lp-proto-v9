@@ -38,7 +38,9 @@ const Founder = ({ title, desc, name, designation, company, image }) => {
         >
           &mdash; Founder's Note
         </BodySmall>
-        <HeadingXLarge className="block text-center">{title}</HeadingXLarge>
+        <HeadingXLarge className="block text-center" weight="medium">
+          {title}
+        </HeadingXLarge>
       </div>
       <SectionContainerMedium className="relative !pt-11 md:!pt-16 md:!mx-auto !mb-0 rounded-5xl overflow-clip">
         <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-5xl">
