@@ -107,7 +107,7 @@ export default function Hero() {
               name="need"
               defaultValue="What do you need"
               aria-label="What do you need"
-              className={`${fieldClass} border-r-8! border-white! outline! outline-neutral-300!`}
+              className="h-12 w-full min-w-0 rounded-xl border-r-8 border-white bg-white px-4 text-base text-neutral-900 outline outline-neutral-300 transition-[border-color,box-shadow] duration-200 placeholder:text-neutral-500 focus:border-primary-800 focus:ring-2 focus:ring-primary-800/15"
             >
               <option value="What do you need">What do you need</option>
               <option value="Policy Review">Policy Review</option>
