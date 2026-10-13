@@ -60,7 +60,7 @@ export default function WhyOneAssure() {
           >
             Personalised
           </HeadingSmall>
-          <BodyMedium>Built around your family and budget</BodyMedium>
+          <BodyMedium>For your needs and budget</BodyMedium>
         </div>
         <div className="col-span-1 flex flex-col items-center p-4 rounded-2xl border border-primary-300 shadow-lg">
           <span className="w-10 aspect-square flex items-center justify-center rounded-full bg-primary-200 mb-2">
@@ -73,7 +73,7 @@ export default function WhyOneAssure() {
           >
             Claims Handled With You
           </HeadingSmall>
-          <BodyMedium>Filing to insurer follow-ups</BodyMedium>
+          <BodyMedium>Filing &mdash; follow-ups &mdash; settlement</BodyMedium>
         </div>
         <div className="col-span-1 flex flex-col items-center p-4 rounded-2xl border border-primary-300 shadow-lg">
           <span className="w-10 aspect-square flex items-center justify-center rounded-full bg-primary-200 mb-2">
@@ -84,7 +84,7 @@ export default function WhyOneAssure() {
             weight="semibold"
             className={"text-neutral-900"}
           >
-            Support for life
+            Health & Life Specialists
           </HeadingSmall>
           <BodyMedium>Our dedicated claims team</BodyMedium>
         </div>

@@ -14,7 +14,7 @@ export default function App() {
     <ProLayout>
       <Hero />
       <TestimonialSection story={testimonialStory} />
-      <Impact />
+      {/* <Impact /> */}
       <WhyOneAssure />
       <WhatToExpect />
       <Founder {...founderSection} />

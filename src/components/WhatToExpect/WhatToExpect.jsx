@@ -35,7 +35,9 @@ export default function WhatToExpect() {
           <HeadingSmall className={"text-neutral-900"} weight="semibold">
             Book a Slot
           </HeadingSmall>
-          <BodyMedium className={"text-neutral-900"}>Takes 1 minute</BodyMedium>
+          <BodyMedium className={"text-neutral-900"}>
+            Only takes a minute
+          </BodyMedium>
         </div>
 
         <div className="flex flex-col gap-2 items-center border-y border-neutral-300 py-4 px-4">
@@ -46,7 +48,7 @@ export default function WhatToExpect() {
             Talk to an Expert
           </HeadingSmall>
           <BodyMedium className={"text-neutral-900"}>
-            A short, free call
+            A short, free, and insightful call
           </BodyMedium>
         </div>
 
@@ -67,10 +69,10 @@ export default function WhatToExpect() {
             <CiCircleCheck className="w-8 h-8 text-primary-800" />
           </span>
           <HeadingSmall className={"text-neutral-900"} weight="semibold">
-            Get Shortlisted Plans
+            Choose With Confidence
           </HeadingSmall>
           <BodyMedium className={"text-neutral-900"}>
-            Find plans tailored for you
+            We proactively help with claims
           </BodyMedium>
         </div>
       </div>
