@@ -4,10 +4,13 @@ import { complianceNote } from "@/components/Footer/footer.config";
 
 const FooterAbout = () => {
   return (
-    <SectionContainer className="!px-6 md:px-0!  !mb-0">
-      <BodyMedium className="text-neutral-1100  text-center" weight="regular">
+    <SectionContainer className="!px-6 md:px-0! !mb-0">
+      <BodySmall
+        className="text-neutral-1100 text-center leading-5"
+        weight="regular"
+      >
         {complianceNote}
-      </BodyMedium>
+      </BodySmall>
     </SectionContainer>
   );
 };

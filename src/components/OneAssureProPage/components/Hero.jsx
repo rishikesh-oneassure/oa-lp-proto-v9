@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="relative h-fit w-full -mt-24 pt-36 pb-16 md:left-1/2 md:w-screen md:-translate-x-1/2 md:-mt-31.5 md:pt-43.5 md:pb-24 lg:-mt-31 lg:pt-43"
+      className="relative h-fit w-full -mt-24 pt-36 pb-16 md:left-1/2 md:w-screen md:-translate-x-1/2 md:-mt-31.5 md:pt-52 md:pb-20 lg:-mt-31 lg:pt-43"
     >
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <div

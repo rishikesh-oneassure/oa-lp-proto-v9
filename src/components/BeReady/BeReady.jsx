@@ -19,7 +19,7 @@ export default function BeReady() {
           salesperson.
         </BodyLarge>
 
-        <button className="w-full md:w-1/2 max-w-3xl bg-neutral-50 text-primary-800 px-6 py-3 rounded-lg mt-6 md:mt-10 font-semibold hover:bg-primary-100 transition-all duration-100 cursor-pointer">
+        <button className="w-full md:w-1/2 max-w-sm bg-neutral-50 text-primary-800 px-6 py-3 rounded-lg mt-6 md:mt-10 font-semibold hover:bg-primary-100 transition-all duration-100 cursor-pointer">
           Book a free call
         </button>
       </div>

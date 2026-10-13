@@ -34,7 +34,7 @@ export default function InsurerLogoMarquee({ className = "" }) {
         className="mb-4 text-center text-neutral-1100 md:mb-8"
         weight="medium"
       >
-        Backed By India's Most Trusted Insurers
+        Bringing You India's Most Trusted Insurers
       </HeadingSmall>
       <div className="hidden md:block">
         <Marquee speed={100} gradient gradientWidth={200}>

@@ -12,6 +12,7 @@ import {
 import SectionContainer from "@/components/globals/SectionContainer";
 import FooterAbout from "./FooterBottom";
 import { useSubscribeDesktopLayout } from "@/hooks/useSubscribeDesktopLayout";
+import SectionContainerSmall from "@/components/globals/SectionContainerSmall";
 
 const ContactUs = ({ className }) => {
   return (
@@ -60,16 +61,28 @@ const FooterTopSection = ({ utm }) => {
   const isDesktop = useSubscribeDesktopLayout();
 
   return (
-    <SectionContainer className="!px-0 !mb-6 md:!mb-10">
-      <div className="w-full flex flex-col items-center md:items-stretch md:flex-row md:justify-between gap-16 md:gap-32 px-6 md:px-0">
+    <SectionContainerSmall className="!px-0 !mb-6 md:!mb-10">
+      <div className="w-full flex flex-col items-center md:items-stretch content-center md:flex-row md:justify-between gap-10 md:gap-32 px-6 md:px-0">
         <div className="w-min flex flex-col gap-2 items-center md:items-start text-center md:text-left">
-          <div className="flex flex-col gap-2 md:gap-0 items-center md:items-start">
+          <div className="flex flex-col gap-2 md:gap-1 items-center md:items-start">
             <span className="w-48">
               <img src={footerBrand.logo} alt="" className="w-full" />
             </span>
             <BodyMedium className={"text-neutral-900"}>
               {footerBrand.description}
             </BodyMedium>
+          </div>
+
+          <div className="flex items-center gap-2">
+            {footerBrand.social.map((item) => (
+              <CustomLink key={item.name} href={item.href} utm={utm}>
+                <img
+                  src={item.icon}
+                  alt={item.name}
+                  className="cursor-pointer w-8 md:w-16 invert-50 hover:invert-75"
+                />
+              </CustomLink>
+            ))}
           </div>
 
           <div className="flex gap-4 h-16 mt-4">
@@ -84,107 +97,26 @@ const FooterTopSection = ({ utm }) => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-4 justify-between md:py-4">
+        <div className="md:w-48 self-center">
           <FooterAbout />
-
-          <div className="flex items-center flex-wrap text-nowrap justify-center gap-4">
-            {policyGroup.links.map((link) => (
-              <CustomLink key={link.label} href={link.href} utm={utm}>
-                <BodySmall
-                  as="p"
-                  weight="regular"
-                  className="text-neutral-1100 underline hover:text-primary-800"
-                >
-                  {link.label}
-                </BodySmall>
-              </CustomLink>
-            ))}
-          </div>
         </div>
 
-        <div className="flex items-center gap-10 md:grid grid-cols-2 md:gap-8">
-          {footerBrand.social.map((item) => (
-            <CustomLink key={item.name} href={item.href} utm={utm}>
-              <img
-                src={item.icon}
-                alt={item.name}
-                className="cursor-pointer w-8 md:w-16"
-              />
+        <div className="grid grid-cols-2 md:grid-cols-1 gap-x-6 gap-y-2 items-center">
+          {policyGroup.links.map((link) => (
+            <CustomLink key={link.label} href={link.href} utm={utm}>
+              <BodySmall
+                as="p"
+                weight="regular"
+                className="text-neutral-1100 underline hover:text-primary-800 text-center md:text-left"
+              >
+                {link.label}
+              </BodySmall>
             </CustomLink>
           ))}
         </div>
       </div>
-    </SectionContainer>
+    </SectionContainerSmall>
   );
 };
 
 export default FooterTopSection;
-
-/*
-<div className="flex flex-col gap-6 md:flex-row md:gap-24">
-  <div className="w-full flex justify-between md:gap-20">
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-col gap-2">
-        <div className="w-[141.19px] h-8 relative">
-          <img
-            src={footerBrand.logo}
-            alt="OneAssure"
-            className="absolute inset-0 h-full w-full object-contain"
-          />
-        </div>
-        <BodySmall className="text-neutral-1100">
-          {footerBrand.description}
-        </BodySmall>
-      </div>
-      <div className="flex items-center gap-5">
-        {footerBrand.badges.map((badge) => (
-          <img
-            key={badge.alt}
-            src={badge.src}
-            alt={badge.alt}
-            width={badge.width}
-            height={badge.height}
-            className="object-contain"
-          />
-        ))}
-      </div>
-      <div className="flex items-center gap-4">
-        {footerBrand.social.map((item) => (
-          <CustomLink key={item.name} href={item.href} utm={utm}>
-            <img
-              src={item.icon}
-              alt={item.name}
-              width={24}
-              height={24}
-              className="cursor-pointer"
-            />
-          </CustomLink>
-        ))}
-      </div>
-    </div>
-
-    <BodySmall
-      className="text-neutral-1100  text-center"
-      weight="regular"
-    >
-      {complianceNote}
-    </BodySmall>
-
-    <ContactUs className="hidden md:block" />
-  </div>
-</div>
-*/
-
-/*
-{policyGroup.links.map((link) => (
-  <CustomLink key={link.label} href={link.href} utm={utm}>
-    <BodySmall
-      as="p"
-      weight="regular"
-      className="text-neutral-1100  "
-    >
-      {link.label}
-    </BodySmall>
-  </CustomLink>
-))}
-*/
