@@ -28,9 +28,6 @@ export default function HeroImpact({ className }) {
     <div className={cn("mt-8 flex flex-1 flex-col justify-end", className)}>
       <div>
         <div className="flex items-center gap-4">
-          <p className="shrink-0 text-[0.65rem] tracking-[0.22em] text-primary-800 uppercase">
-            Our impact
-          </p>
           <span className="h-px flex-1 bg-primary-800/20" aria-hidden="true" />
         </div>
 
@@ -41,7 +38,8 @@ export default function HeroImpact({ className }) {
               className={cn(
                 "flex w-full flex-col items-center whitespace-nowrap md:w-auto md:flex-1 md:px-6",
                 index === 0 && "md:items-start md:pl-0",
-                index === metrics.length - 1 && "md:items-end md:pr-0 md:text-right",
+                index === metrics.length - 1 &&
+                  "md:items-end md:pr-0 md:text-right",
                 index > 0 &&
                   index < metrics.length - 1 &&
                   "md:items-center md:text-center",
