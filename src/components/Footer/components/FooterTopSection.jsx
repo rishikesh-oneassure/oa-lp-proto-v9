@@ -61,7 +61,7 @@ const FooterTopSection = ({ utm }) => {
   const isDesktop = useSubscribeDesktopLayout();
 
   return (
-    <SectionContainerSmall className="!px-0 !mb-6 md:!mb-10">
+    <SectionContainerSmall className="!px-0 !mb-0">
       <div className="w-full flex flex-col items-center md:items-stretch content-center md:flex-row md:justify-between gap-10 md:gap-32 px-6 md:px-0">
         <div className="w-min flex flex-col gap-2 items-center md:items-start text-center md:text-left">
           <div className="flex flex-col gap-2 md:gap-1 items-center md:items-start">

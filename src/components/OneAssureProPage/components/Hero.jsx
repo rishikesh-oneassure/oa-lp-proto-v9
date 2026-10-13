@@ -40,7 +40,7 @@ export default function Hero() {
       <div className="relative z-1 mx-auto grid w-full max-w-6xl items-stretch gap-8 px-6 md:grid-cols-[minmax(0,1fr)_minmax(340px,420px)] md:gap-x-14 lg:px-2">
         <div className="flex min-w-0 flex-col md:h-full">
           <p className="text-[0.7rem] tracking-[0.22em] text-primary-800 uppercase">
-            Certified advice · No fees · No pressure
+            No hidden fees · No spam · No pressure
           </p>
           <h1 className="mt-3 text-[2rem] leading-[1.15] font-medium tracking-tight text-neutral-1100 md:text-[2.75rem] md:leading-[1.12]">
             <span className="block md:whitespace-nowrap">

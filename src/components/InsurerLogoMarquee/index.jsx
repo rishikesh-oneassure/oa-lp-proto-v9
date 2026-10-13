@@ -10,13 +10,12 @@ function renderLogos() {
   return insurerLogos.map((logo) => (
     <div
       key={logo.src}
-      className="mx-4 flex h-max shrink-0 items-center justify-center bg-white md:mx-12"
+      className="mx-4 flex h-10 w-24 shrink-0 items-center justify-center bg-white md:mx-12 md:w-40"
     >
       <img
         src={logo.src}
         alt={logo.alt}
-        loading="lazy"
-        className="h-10 w-auto object-contain"
+        className="h-10 w-auto max-w-full object-contain"
       />
     </div>
   ));

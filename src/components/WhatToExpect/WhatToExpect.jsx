@@ -36,7 +36,7 @@ export default function WhatToExpect() {
             Book a Slot
           </HeadingSmall>
           <BodyMedium className={"text-neutral-900"}>
-            Only takes a minute
+            It only takes a minute
           </BodyMedium>
         </div>
 
