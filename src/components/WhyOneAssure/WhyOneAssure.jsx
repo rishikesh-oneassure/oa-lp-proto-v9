@@ -1,9 +1,4 @@
-import {
-  PiScales,
-  PiSignature,
-  PiUserGear,
-  PiUserGearThin,
-} from "react-icons/pi";
+import { PiScales, PiSignature, PiUserGear } from "react-icons/pi";
 import SectionContainerLarge from "../globals/SectionContainerLarge";
 import {
   BodyLarge,

@@ -1,64 +1,11 @@
-import {
-  BodyMedium,
-  BodySmall,
-  HeadingSmall,
-} from "@/components/UI/Typography";
+import { BodyMedium, BodySmall } from "@/components/UI/Typography";
 import CustomLink from "@/components/globals/CustomLink";
-import {
-  complianceNote,
-  footerBrand,
-  footerNav,
-} from "@/components/Footer/footer.config";
-import SectionContainer from "@/components/globals/SectionContainer";
+import { footerBrand, footerNav } from "@/components/Footer/footer.config";
 import FooterAbout from "./FooterBottom";
-import { useSubscribeDesktopLayout } from "@/hooks/useSubscribeDesktopLayout";
 import SectionContainerSmall from "@/components/globals/SectionContainerSmall";
 
-const ContactUs = ({ className }) => {
-  return (
-    <div className={` ${className} `}>
-      <HeadingSmall weight="bold" className="text-neutral-1100 mb-3">
-        Contact Us
-      </HeadingSmall>
-      <div>
-        <BodySmall className="text-neutral-1100">
-          Prost Technologies Private Limited
-        </BodySmall>
-        <BodySmall className="text-neutral-1100">
-          CIN- U74999KA2019PTC128430
-        </BodySmall>
-        <BodySmall className="text-neutral-1100">
-          Address - 1st Floor, Gopala Krishna
-          <br /> Complex, Residency Road,
-          <br /> Bengaluru, Karnataka, India -
-          <br /> 560025
-        </BodySmall>
-        <div className="mt-3">
-          <span className="flex gap-1">
-            <BodySmall weight="medium" className="text-neutral-1100">
-              Phone -
-            </BodySmall>
-            <BodySmall className="text-neutral-1100">+91 6364334343</BodySmall>
-          </span>
-          <span className="flex gap-1">
-            <BodySmall weight="medium" className="text-neutral-1100">
-              Mail -
-            </BodySmall>
-            <BodySmall className="text-neutral-1100">
-              support@oneassure.in
-            </BodySmall>
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 const FooterTopSection = ({ utm }) => {
-  const insuranceGroup = footerNav.find((group) => group.title === "Insurance");
-  const companyGroup = footerNav.find((group) => group.title === "Company");
   const policyGroup = footerNav.find((group) => group.title === "Policy");
-  const isDesktop = useSubscribeDesktopLayout();
 
   return (
     <SectionContainerSmall className="!px-0 !mb-0">

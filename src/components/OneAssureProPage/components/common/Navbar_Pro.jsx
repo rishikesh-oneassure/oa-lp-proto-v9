@@ -1,14 +1,7 @@
 import { Button } from "@/components/UI/Button";
-import ScrollNavItem from "@/components/OneAssureProPage/components/common/ScrollNavItem";
 import { useEffect, useRef, useState } from "react";
 
 const NAV_TOP_OFFSET = 38;
-
-const navItems = [
-  { label: "How It Works", targetId: "how-it-works" },
-  { label: "Pricing", targetId: "our-services" },
-  { label: "FAQ", targetId: "faq" },
-];
 
 function Navbar_Pro() {
   const navRef = useRef(null);
@@ -66,17 +59,6 @@ function Navbar_Pro() {
             className="h-8 w-[112px] object-contain sm:h-10 sm:w-[141px]"
           />
         </a>
-
-        {/* <div className="ml-4 hidden flex-1 items-center justify-center gap-8 lg:flex">
-          {navItems.map((item) => (
-            <ScrollNavItem
-              key={item.label}
-              label={item.label}
-              targetId={item.targetId}
-              className="text-sm font-medium text-neutral-1100 transition-colors duration-200 hover:text-primary-800"
-            />
-          ))}
-        </div> */}
 
         <div className="ml-auto">
           <Button

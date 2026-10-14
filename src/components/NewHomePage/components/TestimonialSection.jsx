@@ -1,6 +1,5 @@
 import SectionContainerLarge from "@/components/globals/SectionContainerLarge";
 import SectionContainerMedium from "@/components/globals/SectionContainerMedium";
-import SectionContainerSmall from "@/components/globals/SectionContainerSmall";
 import { BodySmall, HeadingXLarge } from "@/components/UI/Typography";
 import { useEffect, useRef, useState } from "react";
 import { BiSolidQuoteRight } from "react-icons/bi";

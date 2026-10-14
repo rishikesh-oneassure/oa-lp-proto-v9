@@ -1,5 +1,5 @@
 import SectionContainer from "@/components/globals/SectionContainer";
-import { BodyMedium, BodySmall } from "@/components/UI/Typography";
+import { BodySmall } from "@/components/UI/Typography";
 import { complianceNote } from "@/components/Footer/footer.config";
 
 const FooterAbout = () => {
